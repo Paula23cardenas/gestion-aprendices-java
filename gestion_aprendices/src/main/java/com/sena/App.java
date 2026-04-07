@@ -3,7 +3,6 @@ package com.sena;
 import java.util.ArrayList;
 
 public class App {
-
   public static void main(String[] args) {
 
     // 1) creamos objetos (INSTSANCIAS)
@@ -34,7 +33,8 @@ public class App {
     // prueba de validación: intentar asignar un correo inválido
     try {
       aprendiz2.setCorreo("mariagmail.com"); // correo sin '@'
-    } catch (IllegalArgumentException e) {
+    } catch (IllegalArgumentException e)
+      {
       System.out.println("Error al actualizar correo de aprendiz2: " + e.getMessage());
     }
 
